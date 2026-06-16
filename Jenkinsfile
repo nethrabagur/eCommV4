@@ -17,7 +17,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // bat 'npx playwright test'
-                sh "npx playwright test tests/2_Login/Login.spec.js "
+                bat "npx playwright test tests/2_Login/Login.spec.js "
             }
         }
     }
